@@ -1,0 +1,70 @@
+
+.instructions{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #e2e2e2
+  z-index: 2;
+  text-align: center;
+  /* position: absolute; */
+
+}
+
+.instructions h1{
+  font-style: normal;
+  z-index: 3;
+  font-family: 'Major Mono Display', monospace;
+  color: #232323;
+}
+.instructions p{
+  font-style: normal;
+  z-index: 3;
+  font-family: 'Major Mono Display', monospace;
+  color: #232323;
+}
+
+.instructions ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instructions span{
+  display: flex;
+  text-decoration: none;
+  font-family: 'Major Mono Display', monospace;
+  font-style: normal;
+  color: #232323;
+  justify-content: : center;
+  align-items: center;
+}
+
+
+#canvas{ /*Positions canvas and set z-index */
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+}
+
+
+.overlay {
+  height: 100%;
+  margin-left: 40px;
+  width: 0;
+  position: absolute;; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+}
+
+/* Position the content inside the overlay */
+.overlay-content-instructions {
+  position: absolute;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text */
+  margin-top: 30px;
+}
+.overlay-content-instructions p{
+  text-decoration: none;
+  font-family: 'Major Mono Display', monospace; /*Set the font family */
+  color: #232323; /*  Sets Colour */
+}
